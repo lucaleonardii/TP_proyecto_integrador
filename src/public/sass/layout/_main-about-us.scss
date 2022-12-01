@@ -1,0 +1,51 @@
+.main-about-us{
+    margin: 0 auto;
+    max-width: 1800px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+
+.about-us__element{
+    margin: 0 auto;
+    max-width: 1800px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.image{
+    max-width: 800px;
+    width: 100%;
+    float: right;
+    border: 2px solid black;
+
+}
+.image-container{
+    width: fit-content;
+}
+
+.image-n1::after{
+    display: block;
+    content: "Foto de Antonio Alvarado trabajando en su taller";
+    color: rgb(110, 110, 110);
+    font-size: .85em;
+    text-align: center;
+}
+
+.image-n2::after{
+    display: block;
+    content: "Foto de un refugiado de Myanmar";
+    color: rgb(110, 110, 110);
+    font-size: .85em;
+    text-align: center;
+}

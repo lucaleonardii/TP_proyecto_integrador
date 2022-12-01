@@ -1,0 +1,81 @@
+<form action="/product/add" class="main-form" method="post">
+
+    <input type="hidden" name="pId" class="product-id">
+
+    <script>
+        function generateId(max, min) {
+            var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+            var idLenght = Math.floor(Math.random() * (max - min + 1)) + min;
+            var randomId = Array(idLenght).fill(chars).map(function (x) { return x[Math.floor(Math.random() * x.length)] }).join('');
+            return randomId;
+        }
+        const pId = document.querySelector(".product-id")
+        pId.setAttribute("value", generateId(16,16))
+    </script>
+
+    <div class="main-form__element">
+        <label class="product-name__label" for="product-name">Nombre del producto: </label>
+        <input class="product-name__input input" type="text" id="product-name" autofocus name="pName" maxlength="30">
+    </div>
+
+    <div class="main-form__element">
+        <label class="product-price__label" for="product-price">Precio del producto: </label>
+        <input class="product-price__input input" type="number" id="product-price" name="pPrice">
+    </div>
+
+    <div class="main-form__element">
+        <label class="product-stock__label" for="product-stock">Stock del producto: </label>
+        <input class="product-stock__input input" type="number" id="product-stock" name="pStock">
+    </div>
+
+    <div class="main-form__element">
+        <label class="product-trademark__label" for="product-trademark">Marca del producto: </label>
+        <input id="product-trademark" name="pBrand" class="select" maxlength="40">
+
+    </div>
+
+    <div class="main-form__element">
+        <label class="product-category__label" for="product-category">Categoría del producto: </label>
+        <input name="pCategory" id="product-category" class="select" maxlength="50">
+    </div>
+
+
+    <div class="main-form__element">
+        <label for="product-short-description">Descripción corta del producto: </label>
+        <textarea name="pShortDesc" id="product-short-description" class="textarea" cols="30" rows="10" maxlength="80"
+            placeholder="Máximo 80 palabras..."></textarea>
+    </div>
+
+    <div class="main-form__element">
+        <label for="product-long-description">Descripción larga del producto: </label>
+        <textarea name="pLongDesc" id="product-long-description" class="textarea" cols="30" rows="10" maxlength="2000"
+            placeholder="Máximo 2000 palabras..."></textarea>
+    </div>
+
+    <div class="main-form__element u-display__block">
+        <input type="checkbox" id="free-shipping" name="pShipping" value="true" class="input">
+        <label for="product-free-shipping">Envío sín cargo</label>
+    </div>
+
+    <div class="main-form__element u-display__block">
+        <label for="product-min-age">Edad desde</label>
+        <input type="number" min="0" max="99" id="product-min-age" class="straight-input" name="pMinAge">
+
+        <label for="product-max-age">hasta</label>
+        <input type="number" min="1" max="99" id="product-min-age" class="straight-input" name="pMaxAge">
+    </div>
+
+
+    <div class="main-form__element">
+        <label for="product-image">Foto del producto: </label>
+        <input type="file" class="product-image input" name="pPicture">
+    </div>
+
+    <div class="main-form__element">
+        <input class="main-form__submit" type="submit" value="Enviar">
+    </div>
+</form>
+<script src="/js/alta.html-verification.js"></script>
+
+<!-- <script src="../js/alta.html-verification.js"></script>
+<script src="js/alta.html-verification.js"></script> -->

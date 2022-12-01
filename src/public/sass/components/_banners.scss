@@ -1,0 +1,20 @@
+.banner-container{
+    max-width: none;
+    width: 100%;
+    border-radius: 15px;
+    margin: 25px 0;
+}
+.banner__image{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 864px;
+}
+
+
+
+@media (min-width: 1440px) {
+    .banner{
+        margin: 90px 90px;
+    }
+}

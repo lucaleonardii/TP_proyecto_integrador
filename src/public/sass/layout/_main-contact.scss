@@ -1,0 +1,65 @@
+.contact-form{
+    display: flex;
+    border-radius: 3px;
+    padding: 1.8em;
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-form > *{
+    box-sizing: border-box;
+}
+
+.form__element__customer-commentary{
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+.customer-commentary__textarea{
+flex: 1;
+min-width: 18em;
+resize: none;
+width: 100%;
+}
+
+
+
+@media(min-width:653px){
+
+    .form__element__customer-commentary{
+        display: flex;
+        flex-direction: column;
+        order: 2;
+}
+
+.customer-commentary__textarea{
+    flex: 1;
+    resize: none;
+    width:  calc(100vw - 20px);      /* calc and viewport to the rescue */
+    height: calc(100vh - 20px);
+    resize: none;
+}
+}
+
+.form__element__customer-contact{
+    flex: 1;
+    order: 1;
+    margin-right: 2em;
+}
+.form__element__customer-contact input{
+    width: 100%;
+}
+
+.form__element__customer-contact input,
+.form__element__customer-contact button{
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.form__element__customer-contact button{
+    background: gray;
+    color: white;
+    margin-bottom: 1em;
+}
+.contact-form__title{
+    text-align: center;
+}

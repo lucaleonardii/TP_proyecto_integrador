@@ -1,0 +1,28 @@
+<div class="cards-container" id="cardsContainer">
+
+    {{#each products}}
+    <div class="card">
+        <article class="card__article">
+            <div class="card__image-container">
+                <img src="/img/products/{{pPicture}}" alt="{{pName}}" class="card__image">
+            </div>
+            <div class="card__content">
+                <h2 class="card__heading">{{pName}}</h2>
+                <div class="card__description">
+                    <span>
+                        {{pShortDesc}}
+                    </span>
+                </div>
+                <div class="card__price">
+                    <span class="price__cutted u-cut-price"></span>
+                    <span class="price__final-price">
+                        ${{pPrice}}
+                    </span>
+                </div>
+                <a href="{{pId}}*{{pName}}*{{pPrice}}" class="card__link">Añadir al carrito</a>
+            </div>
+        </article>
+    </div>
+    {{/each}}
+
+</div>

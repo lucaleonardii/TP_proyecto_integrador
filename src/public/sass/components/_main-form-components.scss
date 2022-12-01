@@ -1,0 +1,77 @@
+.product-image{
+    border: none !important;
+}
+
+.select{
+    padding: 3px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    width: 250px;
+
+}
+
+.input{
+    display: block;
+    width: 250px;
+    padding: 3px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+}
+.straight-input{
+    display: initial;
+    width: auto;
+    padding: 3px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+}
+
+.select option{
+    color: black;
+}
+
+
+#free-shipping{
+    padding: 3px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    display: initial;
+    width: auto;
+}
+
+#product-short-description{
+
+    max-width: 255px;
+    min-width: 255px;
+    width: 255px;
+
+    max-height: 120px;
+    min-height: 80px;
+    height: 80px;
+
+    padding: 3px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+
+
+}
+
+#product-long-description{
+
+    max-width: 255px;
+    min-width: 255px;
+    width: 255px;
+
+    min-height: 200px;
+    max-height: 350px;
+    height: 250px;
+
+    padding: 3px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+
+}
+
+#product-min-age{
+    min-width: 10px;
+    max-width: 45px;
+}

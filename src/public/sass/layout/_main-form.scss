@@ -1,0 +1,42 @@
+.main-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.main-form__element{
+    max-width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.main-form__element[data-error] .input{
+    border-color: #c92432;
+    color: #c92432;
+    background: #fffafa;
+}
+.main-form__element[data-error] .select{
+    border-color: #c92432;
+    color: #c92432;
+    background: #fffafa;
+}
+.main-form__element[data-error] #product-short-description{
+    border-color: #c92432;
+    color: #c92432;
+    background: #fffafa;
+}
+
+
+.main-form__element[data-error]::after{
+    content: attr(data-error);
+    font-size: 0.85em;
+    color: #c92432;
+    display: block;
+
+}
+
+

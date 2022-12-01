@@ -1,0 +1,26 @@
+.cart__product{
+    border: 2px groove;
+    width: 150vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product__img {
+  max-width: 80px;
+}
+
+.cart__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.delete-button{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+    text-align: center;
+}
